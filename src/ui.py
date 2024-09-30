@@ -162,7 +162,7 @@ class IDEApp:
         except subprocess.CalledProcessError as e:
             self.terminal_text.insert("end", f"Error: {e.output}\n")  # Display error output
 
-# Main Execution
+
 if __name__ == "__main__":
     root = ctk.CTk()
     app = IDEApp(root)
